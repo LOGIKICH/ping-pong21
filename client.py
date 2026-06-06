@@ -41,9 +41,12 @@ def receive():
 font_win = font.Font(None, 72)
 font_main = font.Font(None, 36)
 # --- ЗОБРАЖЕННЯ ----
-
+paddle_I = transform.scale(image.load)('paddle.png').convert_alpha(),(20,100))
+paddle_I = transform.scale(image.load)('paddle.png').convert_alpha(),(20,100))
 # --- ЗВУКИ ---
-
+# --- ЗВУКИ ---
+bg_music = mixer_music.load("C:\Users\user\Desktop\ping-pong-master\Orbital Colossus.mp3")
+hit_sound = Sound("C:\Users\user\Desktop\ping-pong-master\bad-to-the-bone-meme.mp3")
 # --- ГРА ---
 game_over = False
 winner = None
